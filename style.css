@@ -998,3 +998,68 @@ h2 {
     scroll-behavior: auto !important;
   }
 }
+
+/* Mobile polish */
+@media (max-width: 600px) {
+  body { width:100%; overflow-x:hidden; }
+  header { width:calc(100% - 20px); top:8px; padding:7px 10px; border-radius:18px; box-shadow:3px 4px 0 #ffb8d0; }
+  .brand { font-size:13px; gap:6px; white-space:nowrap; }
+  .brand img { width:28px; }
+  #sound { width:38px; height:38px; margin-left:auto; flex:0 0 38px; }
+
+  .hero { min-height:auto; padding:105px 16px 62px; display:flex; flex-direction:column; }
+  .tag { font-size:11px; padding:7px 10px; }
+  h1 { font-size:clamp(50px,16vw,68px); line-height:.9; letter-spacing:-3px; margin:18px 0; }
+  h1 em { -webkit-text-stroke:1.4px #2b2024; text-shadow:3px 3px 0 #2b2024; }
+  .hero p,.section-head p { font-size:15px; line-height:1.55; }
+  .bigbtn { padding:13px 18px; gap:14px; }
+  .hero-kitty { width:100%; margin-top:38px; min-height:300px; }
+  .hero-kitty > img { width:min(76vw,300px); }
+  .speech { top:0; right:0; max-width:135px; padding:10px 11px; font-size:11px; }
+  .orbit { font-size:25px; }
+  .marquee { font-size:14px; padding:9px 0; }
+
+  .section { padding:68px 14px; }
+  h2 { font-size:clamp(38px,12vw,54px); letter-spacing:-2px; }
+  .game-grid { gap:24px; }
+  .card { width:100%; padding:18px 14px 20px; border-radius:24px; box-shadow:6px 7px 0 #ffc1d7; }
+  .card:hover { transform:none; box-shadow:6px 7px 0 #ffc1d7; }
+  .card h3 { font-size:32px; margin:42px 0 6px; }
+  .card p { font-size:14px; line-height:1.5; }
+  .sticker { top:14px; right:13px; font-size:10px; padding:6px 9px; }
+  #arena { height:250px; margin:18px 0; border-radius:20px; }
+  #runner { width:66px; }
+  #score { font-size:48px; right:10px; bottom:5px; }
+  .pill { padding:13px 17px; min-height:48px; }
+  .machine .capsule { width:160px; }
+  .machine .glass { height:140px; }
+  #prize { font-size:19px; }
+
+  .quiz-card { padding:22px 15px; border-radius:24px; box-shadow:7px 8px 0 #ff4f91; }
+  #question { font-size:28px; line-height:1.05; margin:24px 0 16px; }
+  #answers button { padding:15px 12px; min-height:52px; font-size:14px; }
+  #result { font-size:23px; }
+
+  .gift-sec { min-height:650px; padding-top:70px; padding-bottom:70px; gap:25px; }
+  .gift { width:230px; height:235px; transform:scale(.82); }
+  .gift:hover { transform:scale(.82); }
+  .giftmsg img { width:180px; }
+  .giftmsg h3 { font-size:38px; }
+
+  .social { padding:90px 16px 115px; }
+  .social h2 { font-size:42px; }
+  .socials { width:100%; gap:14px; }
+  .socials a { width:min(100%,300px); justify-content:center; min-height:56px; }
+  .peek { width:105px; left:-18px; }
+  #toast { width:calc(100% - 28px); text-align:center; bottom:16px; font-size:13px; }
+}
+
+@media (max-width: 380px) {
+  .brand { font-size:11px; }
+  .brand img { width:24px; }
+  h1 { font-size:49px; }
+  .hero-kitty > img { width:235px; }
+  .speech { max-width:115px; }
+  .card h3 { font-size:29px; }
+  #arena { height:225px; }
+}
