@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kitty Dünyası 🎀</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><img src="./assets/kitty-wave.png" alt="Hello Kitty"><div class="loadbar"><i></i></div><b>balaca dünyan hazırlanır...</b></div>
+<div class="cursor"></div><div id="trail"></div><div class="grain"></div><div id="floaters"></div>
+
+<header>
+  <a class="brand" href="#home"><img src="./assets/bow.png" alt="Kitty Ribbon"> KITTY WORLD</a>
+  <nav><a href="#home">Ana səhifə</a><a href="#oyunlar">Oyunlar</a><a href="#tanisaq">Tanış olaq</a><a href="#hediyye">Hədiyyə</a></nav>
+  <button id="sound" aria-label="Səs">♫</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+ <div class="cloud c1"></div><div class="cloud c2"></div>
+ <div class="hero-copy">
+   <span class="tag">🎀 SƏNİN ÜÇÜN HAZIRLANIB</span>
+   <h1>Salam,<br><em>Kitty qızı!</em></h1>
+   <p>Burada ciddi heç nə yoxdur. Sadəcə bir az çəhrayı, bir az oyun və çoxlu Hello Kitty var.</p>
+   <a class="bigbtn" href="#oyunlar">Başlayaq <span>→</span></a>
+ </div>
+ <div class="hero-kitty">
+   <div class="orbit o1">★</div><div class="orbit o2">♡</div><div class="orbit o3">🎀</div>
+   <img src="./assets/kitty-wave.png" alt="Hello Kitty Hero">
+   <div class="speech">Məni tutmağa çalışma, aşağıda onsuz da qaçacam :D</div>
+ </div>
+ <div class="marquee"><div>HELLO KITTY ★ ÇƏHRAYI DÜNYA ★ OYUNLAR ★ SÜRPRİZLƏR ★ HELLO KITTY ★ ÇƏHRAYI DÜNYA ★ OYUNLAR ★ SÜRPRİZLƏR ★</div></div>
+</section>
+
+<section id="oyunlar" class="section">
+ <div class="section-head"><small>01 / OYUNLAR</small><h2>Darıxmağa icazə yoxdur.</h2></div>
+ <div class="game-grid">
+   <article class="card catch-card">
+    <span class="sticker">TUT MƏNİ!</span><h3>Kitty qaçır 🐾</h3>
+    <p>20 saniyədə bacardığın qədər Kitty-ni tut.</p>
+    <div id="arena"><img id="runner" src="./assets/kitty-running.png" alt="Running Kitty"><b id="score">0</b></div>
+    <button class="pill" id="startCatch">Oyuna başla</button>
+   </article>
+   <article class="card machine">
+    <span class="sticker">ŞANSINI YOXLA</span><h3>Kitty kapsulu 🎁</h3>
+    <p>Düyməyə bas. Nə çıxacağını mən də bilmirəm.</p>
+    <div class="capsule" id="capsuleMachine"><div class="glass"><img id="gachaKitty" src="./assets/kitty-gacha.png" alt="Gacha Kitty"></div><div class="knob" id="gachaKnob"></div></div>
+    <button class="pill" id="gacha">Fırlat</button>
+    <div id="prize">Hazırsan?</div>
+   </article>
+ </div>
+</section>
+
+<section id="tanisaq" class="section quiz-wrap">
+ <div class="section-head"><small>02 / TANIŞ OLAQ</small><h2>Səni bir az tanıyaq.</h2><p>Burada səhv cavab yoxdur. Bəlkə bir dənə var. Pişikləri sevmirəm desən. :D</p></div>
+ <div class="quiz-card">
+   <div class="progress"><i id="prog"></i></div>
+   <div id="question"></div>
+   <div id="answers"></div>
+   <div id="result"></div>
+ </div>
+</section>
+
+<section id="hediyye" class="section gift-sec">
+ <div class="gift-copy"><small>03 / BALACA SÜRPRİZ</small><h2>Bu qutunun içində nə var?</h2><p>Bir dəfə açılır. Sonra özünü görməmiş kimi apar.</p></div>
+ <button id="gift" class="gift" aria-label="Hədiyyəni aç"><span class="lid"></span><span class="box"></span><span class="ribbon"></span></button>
+ <div id="giftMsg" class="giftmsg"><img src="./assets/kitty-sitting.png" alt="Cute Kitty Gift"><h3>Bir kofe məndən ☕</h3><p>Kuponun vaxtı bitmir. İstədiyin vaxt istifadə edə bilərsən.</p></div>
+</section>
+
+<section class="social">
+ <img class="peek" src="./assets/kitty-peek.png" alt="Peeking Kitty">
+ <small>BURADAN DA TAPARSAN</small><h2>İtib-batsam, məni burada axtar.</h2>
+ <div class="socials">
+  <a href="#" id="instagram" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.5-3.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg><span>Instagram</span></a>
+  <a href="#" id="tiktok" target="_blank" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3h3c.3 2 1.5 3.4 4 3.8v3a9 9 0 0 1-4-1.3V16a7 7 0 1 1-6-6.9v3.2A3.8 3.8 0 1 0 14 16V3Z"/></svg><span>TikTok</span></a>
+ </div>
+</section>
+</main>
+
+<div id="toast"></div>
+<script src="script.js"></script>
+</body></html>
